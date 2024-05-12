@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      label {
+        display: block;
+      }
+
+      table {
+        border-collapse: collapse;
+      }
+      td,
+      th {
+        border: 1px solid black;
+        padding: 5px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <input
+      type="date"
+      id="dateInput"
+      placeholder="YYYY-MM-DD"
+      onchange="formatDate()"
+    />
+
+    <ol type="i">
+      <li>apple</li>
+      <li>apple</li>
+      <li>apple</li>
+      <li>apple</li>
+      <li>apple</li>
+    </ol>
+    <a href="lukman (2).pdf" download="lukman" target="_blank">download</a>
+
+    <form action="">
+      <label for="name"
+        >Your name: <input type="text" id="name" placeholder="name"
+      /></label>
+      <label for="email">Your email: <input type="text" id="email" /></label>
+
+      <fieldset>
+        <legend>Take a pitha</legend>
+        <label for="vapa"
+          ><input type="radio" name="pitha" id="vapa" />Vapa</label
+        >
+        <label for="chitoy"
+          ><input type="radio" name="pitha" id="chitoy" />Chitoy</label
+        >
+      </fieldset>
+
+      <fieldset>
+        <legend>Take vortas</legend>
+        <label for="sutki"
+          ><input type="checkbox" name="vorat" id="sutki" />Sutki</label
+        >
+        <label for="sorisa"
+          ><input type="checkbox" name="vorta" id="sorisa" />Sorisa</label
+        >
+        <label for="kalojira"
+          ><input type="checkbox" name="vorta" id="kalojira" />Kalojira</label
+        >
+      </fieldset>
+      <fieldset>
+        <legend>Special instructions</legend>
+        <label for="special">
+          <textarea name="" id="" cols="30" rows="5"></textarea>
+        </label>
+      </fieldset>
+      <input type="reset" value="Reset all fields" />
+      <input type="submit" value="submit" />
+    </form>
+
+    <h2>Table</h2>
+    <table>
+      <caption>
+        Employee salary table
+      </caption>
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>Name</th>
+          <th>company</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>bill gatse</td>
+          <td>Microsoft</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Zukarburg</td>
+          <td>Facebook</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Totla employee</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
